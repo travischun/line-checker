@@ -1,5 +1,7 @@
 from urllib.request import Request, urlopen
 import ssl
+import smtplib
+import sys
 from bs4 import BeautifulSoup as soup
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
@@ -7,6 +9,16 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import time
 
+CARRIERS = {
+    "att": "@mms.att.net",
+    "tmobile": "@tmomail.net",
+    "verizon": "@vtext.com",
+    "sprint": "@messaging.sprintpcs.com"
+}
+carrier = "att"
+phone_number = "9722077596"
+EMAIL = "travis.chun13@gmail.com"
+PASSWORD = sys.argv[1]
 
 mlb_teams = ["Arizona Diamondbacks","Atlanta Braves","Baltimore Orioles","Boston Red Sox","Chicago White Sox","Chicago Cubs","Cincinnati Reds","Cleveland Guardians","Colorado Rockies","Detroit Tigers","Houston Astros","Kansas City Royals","Los Angeles Angels","Los Angeles Dodgers","Miami Marlins","Milwaukee Brewers","Minnesota Twins","New York Yankees","New York Mets","Oakland Athletics","Philadelphia Phillies","Pittsburgh Pirates","San Diego Padres","San Francisco Giants","Seattle Mariners","St. Louis Cardinals","Tampa Bay Rays","Texas Rangers","Toronto Blue Jays","Washington Nationals"]
 
@@ -19,7 +31,7 @@ driver = webdriver.Firefox()
 
 driver.get(URL)
 # time.sleep(10)
-delay = 10
+delay = 15
 # wait1 = WebDriverWait(driver,15)
 wait = WebDriverWait(driver, delay).until(EC.presence_of_element_located((By.ID, 'mwc-app')))
 
@@ -46,6 +58,18 @@ arrNames = []
 arrOdds = []
 arrTimes = []
 is_mlb_team = False
+
+def send_message(phone_number, carrier, message):
+    recipient = phone_number + CARRIERS[carrier]
+    auth = (EMAIL, PASSWORD)
+ 
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.starttls()
+    server.login(auth[0], auth[1])
+ 
+    server.sendmail(auth[0], recipient, message)
+
+
 
 for job_element in job_elements:
     #print(job_element, end="\n"*2)
@@ -78,15 +102,20 @@ for job_element in job_elements:
 count = 0
 timeCount = 0
 # print(arrTimes)
+concatStr = ""
 for x,name in enumerate(arrNames):
     if count == 0:
+        concatStr = '\n'.join([concatStr,"--------------", arrTimes[timeCount], arrNames[x]  + " : ", arrOdds[x]])
         print("--------------")
         print(arrTimes[timeCount])
         print(arrNames[x]  + " : ", arrOdds[x])
         count = count + 1
     else:
+        concatStr = '\n'.join([concatStr,arrNames[x]  + " : ", arrOdds[x]])
         print(arrNames[x]  + " : ", arrOdds[x])
         count = 0
         timeCount = timeCount + 1
 
+#print(concatStr)
+send_message(phone_number, carrier, concatStr)
 driver.quit()
