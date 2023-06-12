@@ -2,6 +2,7 @@ from urllib.request import Request, urlopen
 import ssl
 import smtplib
 import sys
+from pymongo import MongoClient
 from bs4 import BeautifulSoup as soup
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
@@ -57,7 +58,9 @@ job_elements = results.find_all("div", class_="EventCard")
 arrNames = []
 arrOdds = []
 arrTimes = []
+arrGames = []
 is_mlb_team = False
+myClient = MongoClient()
 
 def send_message(phone_number, carrier, message):
     recipient = phone_number + CARRIERS[carrier]
@@ -81,8 +84,21 @@ for job_element in job_elements:
     #     print(name, end="\n"*2)
     #     # print(name.text)
         if name.text in mlb_teams:
+
             oddsHTML = job_element.find_all("div", class_="oddsView")
+            
             htmlTimes = job_element.find_all("div", class_="dateContainer")
+
+            skip = False
+            
+            for i in htmlTimes:
+                if (i.find("span", class_="liveClock")):
+                    skip = True
+                    continue
+            
+            if (skip):
+                continue
+
             #print(oddsHTML)
             x = 0
             for times in htmlTimes:
@@ -103,18 +119,43 @@ count = 0
 timeCount = 0
 # print(arrTimes)
 concatStr = ""
+gameRecord = {}
 for x,name in enumerate(arrNames):
     if count == 0:
         concatStr = '\n'.join([concatStr,"--------------", arrTimes[timeCount], arrNames[x]  + " : ", arrOdds[x]])
         print("--------------")
         print(arrTimes[timeCount])
         print(arrNames[x]  + " : ", arrOdds[x])
+        away = {
+            "GameTime":arrTimes[timeCount].replace("| ", ""),
+            "Away":
+            {
+                "Team":arrNames[x],
+                "OpeningLine":arrOdds[x]
+            }
+            }
+        gameRecord.update(away)
         count = count + 1
     else:
         concatStr = '\n'.join([concatStr,arrNames[x]  + " : ", arrOdds[x]])
         print(arrNames[x]  + " : ", arrOdds[x])
+        home = {
+            "Home":
+            {
+                "Team":arrNames[x],
+                "OpeningLine":arrOdds[x]
+            }
+        }
+        gameRecord.update(home)
+        arrGames.append(gameRecord)
+        gameRecord = {}
         count = 0
         timeCount = timeCount + 1
+myClient = MongoClient("localhost", 27017)
+db = myClient["local"]
+collection = db["MLB"]
+
+collection.insert_many(arrGames)
 
 #print(concatStr)
 send_message(phone_number, carrier, concatStr)
