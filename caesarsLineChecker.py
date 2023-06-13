@@ -81,12 +81,7 @@ def caesarsLineChecker():
     timeCount = 0
     concatStr = ""
     gameRecord = {}
-    print('names')
-    print(len(arrNames))
-    print('times')
-    print(len(arrTimes))
-    print('odds')
-    print(len(arrOdds))
+
     for x,name in enumerate(arrNames):
         if count == 0:
             concatStr = '\n'.join([concatStr,"--------------", arrTimes[timeCount], arrNames[x]  + " : ", arrOdds[x]])
