@@ -17,7 +17,7 @@ def caesarsLineChecker():
     delay = 15
     wait = WebDriverWait(driver, delay).until(EC.presence_of_element_located((By.ID, 'mwc-app')))
 
-    for i in range(0,8): # here you will need to tune to see exactly how many scrolls you need
+    for i in range(0,9): # here you will need to tune to see exactly how many scrolls you need
         driver.execute_script('window.scrollBy(0, 400)')
         time.sleep(1)
 
@@ -41,15 +41,21 @@ def caesarsLineChecker():
         #     print(name, end="\n"*2)
         #     # print(name.text)
             if name.text in mlb_teams:
-
+                
                 oddsHTML = job_element.find_all("div", class_="oddsView")
                 
                 htmlTimes = job_element.find_all("div", class_="dateContainer")
+
+                lockedHTML = job_element.find_all("div", class_="selectionContainer")
 
                 skip = False
                 
                 for i in htmlTimes:
                     if (i.find("span", class_="liveClock")):
+                        skip = True
+                        continue
+                for i in lockedHTML:
+                    if (i.find("button", class_="disabled")):
                         skip = True
                         continue
                 
@@ -75,6 +81,12 @@ def caesarsLineChecker():
     timeCount = 0
     concatStr = ""
     gameRecord = {}
+    print('names')
+    print(len(arrNames))
+    print('times')
+    print(len(arrTimes))
+    print('odds')
+    print(len(arrOdds))
     for x,name in enumerate(arrNames):
         if count == 0:
             concatStr = '\n'.join([concatStr,"--------------", arrTimes[timeCount], arrNames[x]  + " : ", arrOdds[x]])
