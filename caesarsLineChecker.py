@@ -42,7 +42,7 @@ def caesarsLineChecker():
         #     # print(name.text)
             if name.text in mlb_teams:
                 
-                oddsHTML = job_element.find_all("div", class_="oddsView")
+                oddsHTML = job_element.find_all("div", class_="cui__market-button-wrapper")
                 
                 htmlTimes = job_element.find_all("div", class_="dateContainer")
 
@@ -81,7 +81,12 @@ def caesarsLineChecker():
     timeCount = 0
     concatStr = ""
     gameRecord = {}
-
+    # print(arrNames)
+    # print(len(arrNames))
+    # print(arrTimes)
+    # print(len(arrTimes))
+    # print(arrOdds)
+    # print(len(arrOdds))
     for x,name in enumerate(arrNames):
         if count == 0:
             concatStr = '\n'.join([concatStr,"--------------", arrTimes[timeCount], arrNames[x]  + " : ", arrOdds[x]])

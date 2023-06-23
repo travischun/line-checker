@@ -7,7 +7,10 @@ from caesarsLineChecker import caesarsLineChecker
 
 EMAIL = "travis.chun13@gmail.com"
 PASSWORD = sys.argv[1]
-phone_number = "9722077596"
+#Andrew
+phone_number = "2145544438"
+#Travis
+phone_number2 = "9722077596"
 
 
 
@@ -21,3 +24,4 @@ message,arrGames = caesarsLineChecker()
 
 #print(concatStr)
 send_message(phone_number,message,EMAIL,PASSWORD)
+send_message(phone_number2,message,EMAIL,PASSWORD)
