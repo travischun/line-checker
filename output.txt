@@ -1,0 +1,60 @@
+--------------
+ TOP 1
+Arizona Diamondbacks :  -130
+Detroit Tigers :  +100
+--------------
+Jun 10 | 1:10pm
+Miami Marlins :  -105
+Chicago White Sox :  -115
+--------------
+Jun 10 | 1:15pm
+Cincinnati Reds :  +150
+St. Louis Cardinals :  -178
+--------------
+Jun 10 | 2:07pm
+Minnesota Twins :  +110
+Toronto Blue Jays :  -130
+--------------
+Jun 10 | 2:10pm
+San Diego Padres :  -140
+Colorado Rockies :  +118
+--------------
+Jun 10 | 3:05pm
+Kansas City Royals :  +122
+Baltimore Orioles :  -145
+--------------
+Jun 10 | 3:05pm
+New York Mets :  -125
+Pittsburgh Pirates :  +105
+--------------
+Jun 10 | 3:05pm
+Los Angeles Dodgers :  -115
+Philadelphia Phillies :  -105
+--------------
+Jun 10 | 3:10pm
+Washington Nationals :  +158
+Atlanta Braves :  -190
+--------------
+Jun 10 | 3:10pm
+Texas Rangers :  -105
+Tampa Bay Rays :  -115
+--------------
+Jun 10 | 3:10pm
+Oakland Athletics :  +143
+Milwaukee Brewers :  -170
+--------------
+Jun 10 | 5:10pm
+Houston Astros :  +122
+Cleveland Guardians :  -145
+--------------
+Jun 10 | 6:35pm
+Chicago Cubs :  +135
+San Francisco Giants :  -160
+--------------
+Jun 10 | 6:35pm
+Boston Red Sox :  +105
+New York Yankees :  -125
+--------------
+Jun 10 | 9:07pm
+Seattle Mariners :  +110
+Los Angeles Angels :  -130

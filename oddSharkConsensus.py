@@ -67,3 +67,5 @@ def oddSharkConensus():
         concatStr = '\n'.join([concatStr,arrHomeTeams[x] + " : " + str(arrConsensus[percentCount]) + "%"])
         percentCount = percentCount + 1
     print(concatStr)
+
+    return concatStr

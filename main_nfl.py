@@ -6,7 +6,7 @@ from oddSharkConsensus import oddSharkConensus
 from sendMessage import send_message
 from sendEmail import send_email
 
-from caesarsLineChecker import caesarsLineChecker
+from caesarsLineCheckerNFL import caesarsLineCheckerNFL
 
 
 import time
@@ -29,9 +29,7 @@ phone_number2 = "9722077596"
 
 
 
-message,arrGames = caesarsLineChecker()
-
-consensus = oddSharkConensus()
+message,arrGames = caesarsLineCheckerNFL()
 
 #myClient = MongoClient("192.168.1.97", 27017)
 #db = myClient["local"]
@@ -42,7 +40,6 @@ consensus = oddSharkConensus()
 #print(concatStr)
 send_message(phone_number,message,EMAIL,PASSWORD)
 send_message(phone_number2,message,EMAIL,PASSWORD)
-send_message(phone_number,consensus,EMAIL,PASSWORD)
 
 send_email(subject, message, sender, recipients, PASSWORD)
 
