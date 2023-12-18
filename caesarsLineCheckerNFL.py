@@ -5,10 +5,16 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import time
+import datetime
 
 URL = "https://sportsbook.caesars.com/us/ma/bet/americanfootball?id=007d7c61-07a7-4e18-bb40-15104b6eac92"
 
 nfl_teams = ["Denver Broncos","Kansas City Chiefs","Baltimore Ravens","Tennessee Titans","Washington Commanders","Atlanta Falcons","Carolina Panthers","Miami Dolphins","New Orleans Saints","Houston Texans","Seattle Seahawks","Cincinnati Bengals","Indianapolis Colts","Jacksonville Jaguars","San Francisco 49ers","Cleveland Browns","Minnesota Vikings","Chicago Bears","New England Patriots","Las Vegas Raiders","Detroit Lions","Tampa Bay Buccaneers","Philadelphia Eagles","New York Jets","Arizona Cardinals","Los Angeles Rams","New York Giants","Buffalo Bills","Dallas Cowboys","Los Angeles Chargers","Pittsburgh Steelers","Green Bay Packers"]
+year = "2023"
+
+def formatDate(date):
+    dateObject = datetime.datetime.strptime(date, "%b %d %Y %I:%M%p").strftime('%m%d%Y-%H:%M')
+    return dateObject
 
 def caesarsLineCheckerNFL(): 
     
@@ -29,7 +35,7 @@ def caesarsLineCheckerNFL():
     arrNames = []
     arrOdds = []
     arrTimes = []
-    arrGames = []
+    arrGames = {}
     
     for job_element in job_elements:
         #print(job_element, end="\n"*2)
@@ -70,10 +76,11 @@ def caesarsLineCheckerNFL():
                         arrTimes.append(times.text)
                 for odds in oddsHTML:
                     #print(y)
-                    if x <= 1 and y < 1:
+                    print(odds.text)
+                    if x >= 2 and x <= 3 and y < 1:
                         #print(odds.text)
                         arrOdds.append(odds.text)
-                        x = x + 1
+                    x = x + 1
                 arrNames.append(name.text)
                 y = y + 1
 
@@ -93,12 +100,15 @@ def caesarsLineCheckerNFL():
             print("--------------")
             print(arrTimes[timeCount])
             print(arrNames[x]  + " : ", arrOdds[x])
+            timestamp = formatDate(arrTimes[timeCount].replace("|", year))
+            key = timestamp + '-' + arrNames[x] + "vs" + arrNames[x + 1]
+            key = key.replace(" ","")
             away = {
                 "gameTime":arrTimes[timeCount].replace("| ", ""),
                 "Away":
                 {
                     "Team":arrNames[x],
-                    "OpeningLine":arrOdds[x]
+                    "Line":arrOdds[x]
                 }
                 }
             gameRecord.update(away)
@@ -110,14 +120,14 @@ def caesarsLineCheckerNFL():
                 "Home":
                 {
                     "Team":arrNames[x],
-                    "OpeningLine":arrOdds[x]
+                    "Line":arrOdds[x]
                 }
             }
             gameRecord.update(home)
-            arrGames.append(gameRecord)
+            arrGames[key] = gameRecord
             gameRecord = {}
             count = 0
             timeCount = timeCount + 1
     driver.quit()
     return concatStr, arrGames
-    
+
