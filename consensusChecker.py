@@ -25,11 +25,6 @@ def scoresandoddsConsensusCheck():
     delay = 15
     wait = WebDriverWait(driver, delay).until(EC.presence_of_element_located((By.CLASS_NAME, 'page-content')))
 
-    # for i in range(0,9): # here you will need to tune to see exactly how many scrolls you need
-    #     driver.execute_script('window.scrollBy(0, 400)')
-    #     time.sleep(1)
-
-
     html = driver.page_source
     page_soup = soup(html, "html.parser")
     results = page_soup.find_all("div", class_="consensus-table-spread--0")
@@ -43,9 +38,11 @@ def scoresandoddsConsensusCheck():
         htmlCard = teams.find_all("span", class_="trend-graph-sides")
 
         for team in htmlCard:
-            for code in teamCodes:
-                if code in team.text:
-                    teamsArr.append(code)
+            split = team.text.split(' ')
+            if split[2] in teamCodes:
+                teamsArr.append(split[2])
+            if len(split) >= 11 and split[10] in teamCodes:
+                teamsArr.append(split[10])
 
     for consensus in results:    
         percentage = consensus.find_all("span", class_="trend-graph-percentage")

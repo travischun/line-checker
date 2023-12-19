@@ -8,14 +8,14 @@ from sendEmail import send_email
 
 from caesarsLineCheckerNFL import caesarsLineCheckerNFL
 from consensusChecker import scoresandoddsConsensusCheck
-from mongoDB import setupDatabase, checkCollection, createCollection,printCollection
+from mongoDB import setupDatabase, checkCollection, createCollection, printCollection, compareCollection
 import time
 
 from datetime import datetime
 
 
-testConsensusData = {'12182023-19:15-PhiladelphiaEaglesvsSeattleSeahawks': {'Away': {'Team': 'Philadelphia Eagles', 'Consensus': '67'}, 'Home': {'Team': 'Seattle Seahawks', 'Consensus': '33'}, 'gameTime': '12/18 7:15PM'},'12252023-15:30-NewYorkGiantsvsPhiladelphiaEagles': {'gameTime': 'Dec 25 3:30pm', 'Away': {'Team': 'New York Giants', 'Consensus': '50'}, 'Home': {'Team': 'Philadelphia Eagles', 'Consensus': '50'}}, '12252023-19:15-BaltimoreRavensvsSanFrancisco49ers': {'gameTime': 'Dec 25 7:15pm', 'Away': {'Team': 'Baltimore Ravens', 'Consensus': '75'}, 'Home': {'Team': 'San Francisco 49ers', 'Consensus': '25'}}}
-testLineData = {'12182023-19:15-PhiladelphiaEaglesvsSeattleSeahawks': {'gameTime': 'Dec 18 7:15pm', 'Away': {'Team': 'Philadelphia Eagles', 'Line': '-3.5-110'}, 'Home': {'Team': 'Seattle Seahawks', 'Line': '+3.5-110'}},'12252023-15:30-NewYorkGiantsvsPhiladelphiaEagles': {'gameTime': 'Dec 25 3:30pm', 'Away': {'Team': 'New York Giants', 'Line': '+10.5-110'}, 'Home': {'Team': 'Philadelphia Eagles', 'Line': '-10.5-110'}}, '12252023-19:15-BaltimoreRavensvsSanFrancisco49ers': {'gameTime': 'Dec 25 7:15pm', 'Away': {'Team': 'Baltimore Ravens', 'Line': '+5.5-110'}, 'Home': {'Team': 'San Francisco 49ers', 'Line': '-5.5-110'}}}
+testConsensusData = {'12182023-19:15-PhiladelphiaEaglesvsSeattleSeahawks': {'Away': {'Team': 'Philadelphia Eagles', 'Consensus': '67'}, 'Home': {'Team': 'Seattle Seahawks', 'Consensus': '33'}, 'gameTime': '12/18 7:15PM'},'12252023-15:30-NewYorkGiantsvsPhiladelphiaEagles': {'gameTime': 'Dec 25 3:30pm', 'Away': {'Team': 'New York Giants', 'Consensus': '50'}, 'Home': {'Team': 'Philadelphia Eagles', 'Consensus': '50'}}, '12252023-19:15-BaltimoreRavensvsSanFrancisco49ers': {'gameTime': 'Dec 25 7:15pm', 'Away': {'Team': 'Baltimore Ravens', 'Consensus': '65'}, 'Home': {'Team': 'San Francisco 49ers', 'Consensus': '35'}}}
+testLineData = {'12182023-19:15-PhiladelphiaEaglesvsSeattleSeahawks': {'gameTime': 'Dec 18 7:15pm', 'Away': {'Team': 'Philadelphia Eagles', 'Line': '-4.5-110'}, 'Home': {'Team': 'Seattle Seahawks', 'Line': '+4.5-110'}},'12252023-15:30-NewYorkGiantsvsPhiladelphiaEagles': {'gameTime': 'Dec 25 3:30pm', 'Away': {'Team': 'New York Giants', 'Line': '+11.5-110'}, 'Home': {'Team': 'Philadelphia Eagles', 'Line': '-11.5-110'}}, '12252023-19:15-BaltimoreRavensvsSanFrancisco49ers': {'gameTime': 'Dec 25 7:15pm', 'Away': {'Team': 'Baltimore Ravens', 'Line': '+5.5-110'}, 'Home': {'Team': 'San Francisco 49ers', 'Line': '-5.5-110'}}}
 
 
 
@@ -38,7 +38,12 @@ def consolidateData(db, lineData, consensusData):
         print('Checking key: ' + key)
         exists = checkCollection(db,key)
         if exists:
-            print('nothing to do')
+            print('Checking for new changes to line/consensus')
+            lineData[key]["_id"] = key
+            lineData[key]["Away"]["Consensus"] = consensusData[key]["Away"]["Consensus"]
+            lineData[key]["Home"]["Consensus"] = consensusData[key]["Home"]["Consensus"]
+
+            compareCollection(db, key, lineData[key], now.strftime("%m/%d/%Y %I:%M %p"))
         else:
             lineData[key]["_id"] = key
             lineData[key]["Away"]["Consensus"] = consensusData[key]["Away"]["Consensus"]
@@ -58,13 +63,16 @@ def consolidateData(db, lineData, consensusData):
 
             createCollection(db, key, lineData[key])
 
-    printCollection(db,key)
-# message,arrGames = caesarsLineCheckerNFL()
-# consensus = scoresandoddsConsensusCheck()
-db = setupDatabase('nfl2023')
-consolidateData(db, testLineData,testConsensusData)
+    #printCollection(db,key)
+message,arrGames = caesarsLineCheckerNFL()
+consensus = scoresandoddsConsensusCheck()
+
 # print(consensus)
 # print(arrGames)
+
+db = setupDatabase('nfl2023')
+consolidateData(db, arrGames,consensus)
+
 
 
 

@@ -1,60 +1,321 @@
++175
+-210
++4.0-110
+-4.0-110
+44.5-110
+44.5-110
++175
+-210
++4.0-110
+-4.0-110
+44.5-110
+44.5-110
+-135
++115
+-2.0-110
++2.0-110
+37.0-110
+37.0-110
+-135
++115
+-2.0-110
++2.0-110
+37.0-110
+37.0-110
+-700
++500
+-11.0-110
++11.0-110
+43.5-110
+43.5-110
+-700
++500
+-11.0-110
++11.0-110
+43.5-110
+43.5-110
++122
+-145
++2.5+100
+-2.5-120
+42.5-110
+42.5-110
++122
+-145
++2.5+100
+-2.5-120
+42.5-110
+42.5-110
+-105
+-115
++1.0-110
+-1.0-110
+44.5-110
+44.5-110
+-105
+-115
++1.0-110
+-1.0-110
+44.5-110
+44.5-110
+-135
++115
+-2.5-110
++2.5-110
+42.0-110
+42.0-110
+-135
++115
+-2.5-110
++2.5-110
+42.0-110
+42.0-110
+-165
++140
+-3.0-110
++3.0-110
+47.0-110
+47.0-110
+-165
++140
+-3.0-110
++3.0-110
+47.0-110
+47.0-110
++135
+-160
++3.0-110
+-3.0-110
+38.0-110
+38.0-110
++135
+-160
++3.0-110
+-3.0-110
+38.0-110
+38.0-110
+-225
++185
+-5.0-110
++5.0-110
+36.5-110
+36.5-110
+-225
++185
+-5.0-110
++5.0-110
+36.5-110
+36.5-110
+-105
+-115
++1.0-110
+-1.0-110
+43.0-110
+43.0-110
+-105
+-115
++1.0-110
+-1.0-110
+43.0-110
+43.0-110
++180
+-220
++4.5-110
+-4.5-110
+44.5-110
+44.5-110
++180
+-220
++4.5-110
+-4.5-110
+44.5-110
+44.5-110
++105
+-125
++1.5-110
+-1.5-110
+51.0-110
+51.0-110
++105
+-125
++1.5-110
+-1.5-110
+51.0-110
+51.0-110
++228
+-285
++6.5-110
+-6.5-110
+34.5-110
+34.5-110
++228
+-285
++6.5-110
+-6.5-110
+34.5-110
+34.5-110
++360
+-480
++10.0-110
+-10.0-110
+42.0-110
+42.0-110
++360
+-480
++10.0-110
+-10.0-110
+42.0-110
+42.0-110
++460
+-650
++11.5-110
+-11.5-110
+42.5-110
+42.5-110
++460
+-650
++11.5-110
+-11.5-110
+42.5-110
+42.5-110
++196
+-240
++5.5-110
+-5.5-110
+46.0-110
+46.0-110
++196
+-240
++5.5-110
+-5.5-110
+46.0-110
+46.0-110
 --------------
- TOP 1
-Arizona Diamondbacks :  -130
-Detroit Tigers :  +100
+Dec 21 | 7:15pm
+New Orleans Saints :  +4.0-110
+Los Angeles Rams :  -4.0-110
 --------------
-Jun 10 | 1:10pm
-Miami Marlins :  -105
-Chicago White Sox :  -115
+Dec 23 | 3:30pm
+Cincinnati Bengals :  -2.0-110
+Pittsburgh Steelers :  +2.0-110
 --------------
-Jun 10 | 1:15pm
-Cincinnati Reds :  +150
-St. Louis Cardinals :  -178
+Dec 23 | 7:00pm
+Buffalo Bills :  -11.0-110
+Los Angeles Chargers :  +11.0-110
 --------------
-Jun 10 | 2:07pm
-Minnesota Twins :  +110
-Toronto Blue Jays :  -130
+Dec 24 | 12:00pm
+Cleveland Browns :  +2.5+100
+Houston Texans :  -2.5-120
 --------------
-Jun 10 | 2:10pm
-San Diego Padres :  -140
-Colorado Rockies :  +118
+Dec 24 | 12:00pm
+Indianapolis Colts :  +1.0-110
+Atlanta Falcons :  -1.0-110
 --------------
-Jun 10 | 3:05pm
-Kansas City Royals :  +122
-Baltimore Orioles :  -145
+Dec 24 | 12:00pm
+Seattle Seahawks :  -2.5-110
+Tennessee Titans :  +2.5-110
 --------------
-Jun 10 | 3:05pm
-New York Mets :  -125
-Pittsburgh Pirates :  +105
+Dec 24 | 12:00pm
+Detroit Lions :  -3.0-110
+Minnesota Vikings :  +3.0-110
 --------------
-Jun 10 | 3:05pm
-Los Angeles Dodgers :  -115
-Philadelphia Phillies :  -105
+Dec 24 | 12:00pm
+Washington Commanders :  +3.0-110
+New York Jets :  -3.0-110
 --------------
-Jun 10 | 3:10pm
-Washington Nationals :  +158
-Atlanta Braves :  -190
+Dec 24 | 12:00pm
+Green Bay Packers :  -5.0-110
+Carolina Panthers :  +5.0-110
 --------------
-Jun 10 | 3:10pm
-Texas Rangers :  -105
-Tampa Bay Rays :  -115
+Dec 24 | 3:05pm
+Jacksonville Jaguars :  +1.0-110
+Tampa Bay Buccaneers :  -1.0-110
 --------------
-Jun 10 | 3:10pm
-Oakland Athletics :  +143
-Milwaukee Brewers :  -170
+Dec 24 | 3:25pm
+Arizona Cardinals :  +4.5-110
+Chicago Bears :  -4.5-110
 --------------
-Jun 10 | 5:10pm
-Houston Astros :  +122
-Cleveland Guardians :  -145
+Dec 24 | 3:25pm
+Dallas Cowboys :  +1.5-110
+Miami Dolphins :  -1.5-110
 --------------
-Jun 10 | 6:35pm
-Chicago Cubs :  +135
-San Francisco Giants :  -160
+Dec 24 | 7:15pm
+New England Patriots :  +6.5-110
+Denver Broncos :  -6.5-110
 --------------
-Jun 10 | 6:35pm
-Boston Red Sox :  +105
-New York Yankees :  -125
+Dec 25 | 12:00pm
+Las Vegas Raiders :  +10.0-110
+Kansas City Chiefs :  -10.0-110
 --------------
-Jun 10 | 9:07pm
-Seattle Mariners :  +110
-Los Angeles Angels :  -130
+Dec 25 | 3:30pm
+New York Giants :  +11.5-110
+Philadelphia Eagles :  -11.5-110
+--------------
+Dec 25 | 7:15pm
+Baltimore Ravens :  +5.5-110
+San Francisco 49ers :  -5.5-110
+Setting up database nfl2023
+Checking key: 12212023-19:15-NewOrleansSaintsvsLosAngelesRams
+[]
+This collection doesn't exist
+Creating Collection: 12212023-19:15-NewOrleansSaintsvsLosAngelesRams
+Checking key: 12232023-15:30-CincinnatiBengalsvsPittsburghSteelers
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams']
+This collection doesn't exist
+Creating Collection: 12232023-15:30-CincinnatiBengalsvsPittsburghSteelers
+Checking key: 12232023-19:00-BuffaloBillsvsLosAngelesChargers
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers']
+This collection doesn't exist
+Creating Collection: 12232023-19:00-BuffaloBillsvsLosAngelesChargers
+Checking key: 12242023-12:00-IndianapolisColtsvsAtlantaFalcons
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers']
+This collection doesn't exist
+Creating Collection: 12242023-12:00-IndianapolisColtsvsAtlantaFalcons
+Checking key: 12242023-12:00-GreenBayPackersvsCarolinaPanthers
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12242023-12:00-IndianapolisColtsvsAtlantaFalcons', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers']
+This collection doesn't exist
+Creating Collection: 12242023-12:00-GreenBayPackersvsCarolinaPanthers
+Checking key: 12242023-12:00-ClevelandBrownsvsHoustonTexans
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12242023-12:00-IndianapolisColtsvsAtlantaFalcons', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers', '12242023-12:00-GreenBayPackersvsCarolinaPanthers']
+This collection doesn't exist
+Creating Collection: 12242023-12:00-ClevelandBrownsvsHoustonTexans
+Checking key: 12242023-12:00-SeattleSeahawksvsTennesseeTitans
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12242023-12:00-IndianapolisColtsvsAtlantaFalcons', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers', '12242023-12:00-GreenBayPackersvsCarolinaPanthers', '12242023-12:00-ClevelandBrownsvsHoustonTexans']
+This collection doesn't exist
+Creating Collection: 12242023-12:00-SeattleSeahawksvsTennesseeTitans
+Checking key: 12242023-12:00-WashingtonCommandersvsNewYorkJets
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12242023-12:00-SeattleSeahawksvsTennesseeTitans', '12242023-12:00-IndianapolisColtsvsAtlantaFalcons', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers', '12242023-12:00-GreenBayPackersvsCarolinaPanthers', '12242023-12:00-ClevelandBrownsvsHoustonTexans']
+This collection doesn't exist
+Creating Collection: 12242023-12:00-WashingtonCommandersvsNewYorkJets
+Checking key: 12242023-12:00-DetroitLionsvsMinnesotaVikings
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12242023-12:00-SeattleSeahawksvsTennesseeTitans', '12242023-12:00-IndianapolisColtsvsAtlantaFalcons', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers', '12242023-12:00-GreenBayPackersvsCarolinaPanthers', '12242023-12:00-WashingtonCommandersvsNewYorkJets', '12242023-12:00-ClevelandBrownsvsHoustonTexans']
+This collection doesn't exist
+Creating Collection: 12242023-12:00-DetroitLionsvsMinnesotaVikings
+Checking key: 12242023-15:05-JacksonvilleJaguarsvsTampaBayBuccaneers
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12242023-12:00-SeattleSeahawksvsTennesseeTitans', '12242023-12:00-IndianapolisColtsvsAtlantaFalcons', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12242023-12:00-DetroitLionsvsMinnesotaVikings', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers', '12242023-12:00-GreenBayPackersvsCarolinaPanthers', '12242023-12:00-WashingtonCommandersvsNewYorkJets', '12242023-12:00-ClevelandBrownsvsHoustonTexans']
+This collection doesn't exist
+Creating Collection: 12242023-15:05-JacksonvilleJaguarsvsTampaBayBuccaneers
+Checking key: 12242023-15:25-DallasCowboysvsMiamiDolphins
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12242023-12:00-SeattleSeahawksvsTennesseeTitans', '12242023-12:00-IndianapolisColtsvsAtlantaFalcons', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12242023-12:00-DetroitLionsvsMinnesotaVikings', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers', '12242023-12:00-GreenBayPackersvsCarolinaPanthers', '12242023-12:00-WashingtonCommandersvsNewYorkJets', '12242023-15:05-JacksonvilleJaguarsvsTampaBayBuccaneers', '12242023-12:00-ClevelandBrownsvsHoustonTexans']
+This collection doesn't exist
+Creating Collection: 12242023-15:25-DallasCowboysvsMiamiDolphins
+Checking key: 12242023-15:25-ArizonaCardinalsvsChicagoBears
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12242023-12:00-SeattleSeahawksvsTennesseeTitans', '12242023-12:00-IndianapolisColtsvsAtlantaFalcons', '12242023-15:25-DallasCowboysvsMiamiDolphins', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12242023-12:00-DetroitLionsvsMinnesotaVikings', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers', '12242023-12:00-GreenBayPackersvsCarolinaPanthers', '12242023-12:00-WashingtonCommandersvsNewYorkJets', '12242023-15:05-JacksonvilleJaguarsvsTampaBayBuccaneers', '12242023-12:00-ClevelandBrownsvsHoustonTexans']
+This collection doesn't exist
+Creating Collection: 12242023-15:25-ArizonaCardinalsvsChicagoBears
+Checking key: 12242023-19:15-NewEnglandPatriotsvsDenverBroncos
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12242023-12:00-SeattleSeahawksvsTennesseeTitans', '12242023-12:00-IndianapolisColtsvsAtlantaFalcons', '12242023-15:25-DallasCowboysvsMiamiDolphins', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12242023-12:00-DetroitLionsvsMinnesotaVikings', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers', '12242023-12:00-GreenBayPackersvsCarolinaPanthers', '12242023-12:00-WashingtonCommandersvsNewYorkJets', '12242023-15:05-JacksonvilleJaguarsvsTampaBayBuccaneers', '12242023-15:25-ArizonaCardinalsvsChicagoBears', '12242023-12:00-ClevelandBrownsvsHoustonTexans']
+This collection doesn't exist
+Creating Collection: 12242023-19:15-NewEnglandPatriotsvsDenverBroncos
+Checking key: 12252023-12:00-LasVegasRaidersvsKansasCityChiefs
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12242023-12:00-SeattleSeahawksvsTennesseeTitans', '12242023-12:00-IndianapolisColtsvsAtlantaFalcons', '12242023-15:25-DallasCowboysvsMiamiDolphins', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12242023-12:00-DetroitLionsvsMinnesotaVikings', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers', '12242023-12:00-GreenBayPackersvsCarolinaPanthers', '12242023-12:00-WashingtonCommandersvsNewYorkJets', '12242023-15:05-JacksonvilleJaguarsvsTampaBayBuccaneers', '12242023-19:15-NewEnglandPatriotsvsDenverBroncos', '12242023-15:25-ArizonaCardinalsvsChicagoBears', '12242023-12:00-ClevelandBrownsvsHoustonTexans']
+This collection doesn't exist
+Creating Collection: 12252023-12:00-LasVegasRaidersvsKansasCityChiefs
+Checking key: 12252023-15:30-NewYorkGiantsvsPhiladelphiaEagles
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12252023-12:00-LasVegasRaidersvsKansasCityChiefs', '12242023-12:00-SeattleSeahawksvsTennesseeTitans', '12242023-12:00-IndianapolisColtsvsAtlantaFalcons', '12242023-15:25-DallasCowboysvsMiamiDolphins', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12242023-12:00-DetroitLionsvsMinnesotaVikings', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers', '12242023-12:00-GreenBayPackersvsCarolinaPanthers', '12242023-12:00-WashingtonCommandersvsNewYorkJets', '12242023-15:05-JacksonvilleJaguarsvsTampaBayBuccaneers', '12242023-19:15-NewEnglandPatriotsvsDenverBroncos', '12242023-15:25-ArizonaCardinalsvsChicagoBears', '12242023-12:00-ClevelandBrownsvsHoustonTexans']
+This collection doesn't exist
+Creating Collection: 12252023-15:30-NewYorkGiantsvsPhiladelphiaEagles
+Checking key: 12252023-19:15-BaltimoreRavensvsSanFrancisco49ers
+['12212023-19:15-NewOrleansSaintsvsLosAngelesRams', '12252023-15:30-NewYorkGiantsvsPhiladelphiaEagles', '12252023-12:00-LasVegasRaidersvsKansasCityChiefs', '12242023-12:00-SeattleSeahawksvsTennesseeTitans', '12242023-12:00-IndianapolisColtsvsAtlantaFalcons', '12242023-15:25-DallasCowboysvsMiamiDolphins', '12232023-19:00-BuffaloBillsvsLosAngelesChargers', '12242023-12:00-DetroitLionsvsMinnesotaVikings', '12232023-15:30-CincinnatiBengalsvsPittsburghSteelers', '12242023-12:00-GreenBayPackersvsCarolinaPanthers', '12242023-12:00-WashingtonCommandersvsNewYorkJets', '12242023-15:05-JacksonvilleJaguarsvsTampaBayBuccaneers', '12242023-19:15-NewEnglandPatriotsvsDenverBroncos', '12242023-15:25-ArizonaCardinalsvsChicagoBears', '12242023-12:00-ClevelandBrownsvsHoustonTexans']
+This collection doesn't exist
+Creating Collection: 12252023-19:15-BaltimoreRavensvsSanFrancisco49ers
