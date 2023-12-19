@@ -7,19 +7,14 @@ from selenium.webdriver.common.by import By
 import time
 import datetime
 
-year = "2023"
-URL = "https://www.scoresandodds.com/nfl/consensus-picks"
 
-teamCodes = ['ARI', 'ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CIN', 'CLE', 'DAL', 'DEN', 'DET', 'GB', 'HOU', 'IND', 'JAX', 'KC', 'LAC', 'LAR', 'LV', 'MIA', 'MIN', 'NE', 'NO', 'NYG', 'NYJ', 'PHI', 'PIT', 'SEA', 'SF', 'TB', 'TEN', 'WAS']
 
-nfl_teams = {"DEN": "Denver Broncos","KC":"Kansas City Chiefs","BAL":"Baltimore Ravens","TEN":"Tennessee Titans","WAS":"Washington Commanders","ATL":"Atlanta Falcons","CAR":"Carolina Panthers","MIA":"Miami Dolphins","NO":"New Orleans Saints","HOU":"Houston Texans","SEA":"Seattle Seahawks","CIN":"Cincinnati Bengals","IND":"Indianapolis Colts","JAX":"Jacksonville Jaguars","SF":"San Francisco 49ers","CLE":"Cleveland Browns","MIN":"Minnesota Vikings","CHI":"Chicago Bears","NE":"New England Patriots","LV":"Las Vegas Raiders","DET":"Detroit Lions","TB":"Tampa Bay Buccaneers","PHI":"Philadelphia Eagles","NYJ":"New York Jets","ARI":"Arizona Cardinals","LAR":"Los Angeles Rams","NYG":"New York Giants","BUF":"Buffalo Bills","DAL":"Dallas Cowboys","LAC":"Los Angeles Chargers","PIT":"Pittsburgh Steelers","GB":"Green Bay Packers"}
 
-datesArr = []
-teamsArr = []
 consensusPercentageArr = []
 
-def scoresandoddsConsensusCheck(): 
-    
+def scoresandoddsConsensusCheck(year, URL, teamList, teamCodes): 
+    datesArr = []
+    teamsArr = []
     driver = webdriver.Firefox()
     driver.get(URL)
     delay = 15
@@ -53,13 +48,13 @@ def scoresandoddsConsensusCheck():
                consensusPercentageArr.append(split[2].split('%')[0])
     
     driver.quit()
-    return formatConsensus()
+    return formatConsensus(teamList,teamsArr,datesArr,year)
 
    
 
 formattedConsensus = {}
 
-def formatDate(date):
+def formatDate(date,year):
     #12/17 7:20PM
     fullDate = date.split(' ')
     fullDate[0] = fullDate[0] + '/' + year
@@ -67,23 +62,23 @@ def formatDate(date):
     dateObject = datetime.datetime.strptime(finishedDate, "%m/%d/%Y %I:%M%p").strftime('%m%d%Y-%H:%M')
     return dateObject
 
-def formatConsensus():
+def formatConsensus(teams,teamsArr,datesArr,year):
     y = 0
-    
+    print(teams)
     timestampArr = []
     for date in datesArr:
-        timestampArr.append(formatDate(date))
+        timestampArr.append(formatDate(date,year))
     for x,team in enumerate(teamsArr):
         if x % 2 == 0:
-            key = timestampArr[y] + '-' + nfl_teams[teamsArr[x]] + "vs" + nfl_teams[teamsArr[x + 1]]
+            key = timestampArr[y] + '-' + teams[teamsArr[x]] + "vs" + teams[teamsArr[x + 1]]
             key = key.replace(" ", "")
             item = {"Away": {}, "Home": {}}
             item['gameTime'] = datesArr[y]
             y = y + 1
-            item['Away']['Team'] = nfl_teams[teamsArr[x]]
+            item['Away']['Team'] = teams[teamsArr[x]]
             item['Away']['Consensus'] = consensusPercentageArr[x]
         else:
-            item['Home']['Team'] = nfl_teams[teamsArr[x]]
+            item['Home']['Team'] = teams[teamsArr[x]]
             item['Home']['Consensus'] = consensusPercentageArr[x]
             formattedConsensus[key] = item 
     return formattedConsensus

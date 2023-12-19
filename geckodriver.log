@@ -9375,3 +9375,183 @@ JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script termina
 m@https://sc-static.net/scevent.min.js:2:2788
 tt/o<@https://sc-static.net/scevent.min.js:2:9389
 
+1703017397208	geckodriver	INFO	Listening on 127.0.0.1:62090
+1703017397706	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/z1/xp6xz36j7zxb6mdqstp30mfw0000gn/T/rust_mozprofilellRqGn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2023-12-19 14:23:17.954 firefox-bin[5099:221429] WARNING: Secure coding is not enabled for restorable state! Enable secure coding by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState: and returning YES.
+1703017398079	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1703017398225	Marionette	INFO	Listening on port 62096
+WebDriver BiDi listening on ws://127.0.0.1:62091
+Read port: 62096
+1703017398326	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62091/devtools/browser/f0a1f1b1-4923-4266-b36e-ee068a5044eb
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2788
+c@https://sc-static.net/scevent.min.js:2:6744
+
+JavaScript warning: https://b470c5d1aeb4.edge.sdk.awswaf.com/b470c5d1aeb4/06faba802dee/challenge.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://b470c5d1aeb4.1c2d24f3.us-east-2.token.awswaf.com/b470c5d1aeb4/challenge.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1703017414885	Marionette	INFO	Stopped listening on port 62096
+JavaScript warning: https://sportsbook.caesars.com/us/build/czr/vendorsScripts/newrelic.js, line 5: Script terminated by timeout at:
+c@https://sportsbook.caesars.com/us/build/czr/vendorsScripts/newrelic.js:5:36569
+
+1703017415593	geckodriver	INFO	Listening on 127.0.0.1:62225
+1703017416111	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/z1/xp6xz36j7zxb6mdqstp30mfw0000gn/T/rust_mozprofilexHcMIr"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2023-12-19 14:23:36.379 firefox-bin[5136:222369] WARNING: Secure coding is not enabled for restorable state! Enable secure coding by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState: and returning YES.
+1703017416514	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1703017416638	Marionette	INFO	Listening on port 62231
+WebDriver BiDi listening on ws://127.0.0.1:62226
+Read port: 62231
+1703017416791	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62226/devtools/browser/5099989d-7e4b-4c4f-be25-8dd7678a9af4
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+Q/c.send@https://sc-static.net/scevent.min.js:2:4813
+ki@https://sc-static.net/scevent.min.js:2:35529
+@https://sc-static.net/scevent.min.js:2:37916
+Q/c/s/<@https://sc-static.net/scevent.min.js:2:4651
+m@https://sc-static.net/scevent.min.js:2:2805
+s@https://sc-static.net/scevent.min.js:2:4629
+m@https://sc-static.net/scevent.min.js:2:2805
+Q/c.send@https://sc-static.net/scevent.min.js:2:4937
+Nn/</c/<@https://sc-static.net/scevent.min.js:2:6767
+m@https://sc-static.net/scevent.min.js:2:2805
+c@https://sc-static.net/scevent.min.js:2:6744
+
+1703017420422	Marionette	INFO	Stopped listening on port 62231
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2788
+tt/o<@https://sc-static.net/scevent.min.js:2:9389
+
+1703017481734	geckodriver	INFO	Listening on 127.0.0.1:62310
+1703017482245	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/z1/xp6xz36j7zxb6mdqstp30mfw0000gn/T/rust_mozprofiley88cJt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2023-12-19 14:24:42.489 firefox-bin[5186:223335] WARNING: Secure coding is not enabled for restorable state! Enable secure coding by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState: and returning YES.
+1703017482611	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1703017482813	Marionette	INFO	Listening on port 62316
+WebDriver BiDi listening on ws://127.0.0.1:62311
+Read port: 62316
+1703017482958	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62311/devtools/browser/224d52c5-9326-4855-9926-34b7292fd084
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2788
+c@https://sc-static.net/scevent.min.js:2:6744
+
+JavaScript warning: https://b470c5d1aeb4.edge.sdk.awswaf.com/b470c5d1aeb4/06faba802dee/challenge.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1703017498128	Marionette	INFO	Stopped listening on port 62316
+JavaScript warning: https://sportsbook.caesars.com/us/build/czr/vendorsScripts/newrelic.js, line 5: Script terminated by timeout at:
+c@https://sportsbook.caesars.com/us/build/czr/vendorsScripts/newrelic.js:5:36569
+
+1703017498904	geckodriver	INFO	Listening on 127.0.0.1:62449
+1703017499424	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/z1/xp6xz36j7zxb6mdqstp30mfw0000gn/T/rust_mozprofileEfu9TX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2023-12-19 14:24:59.694 firefox-bin[5223:224278] WARNING: Secure coding is not enabled for restorable state! Enable secure coding by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState: and returning YES.
+1703017499821	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1703017499948	Marionette	INFO	Listening on port 62455
+Read port: 62455
+WebDriver BiDi listening on ws://127.0.0.1:62450
+1703017499989	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62450/devtools/browser/a0a60140-b93c-463d-b17a-87b43c18f656
+1703017504113	Marionette	INFO	Stopped listening on port 62455
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2788
+tt/o<@https://sc-static.net/scevent.min.js:2:9389
+
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2788
+tt/o<@https://sc-static.net/scevent.min.js:2:9389
+
+1703017616450	geckodriver	INFO	Listening on 127.0.0.1:62544
+1703017616454	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/z1/xp6xz36j7zxb6mdqstp30mfw0000gn/T/rust_mozprofile8xA1AL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2023-12-19 14:26:56.702 firefox-bin[5271:225550] WARNING: Secure coding is not enabled for restorable state! Enable secure coding by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState: and returning YES.
+1703017616829	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1703017617037	Marionette	INFO	Listening on port 62548
+WebDriver BiDi listening on ws://127.0.0.1:62545
+Read port: 62548
+1703017617191	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62545/devtools/browser/99948765-ab5e-43a7-9762-cc6cc386768b
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2788
+c@https://sc-static.net/scevent.min.js:2:6744
+
+JavaScript warning: https://b470c5d1aeb4.edge.sdk.awswaf.com/b470c5d1aeb4/06faba802dee/challenge.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://b470c5d1aeb4.1c2d24f3.us-east-2.token.awswaf.com/b470c5d1aeb4/challenge.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1703017633584	Marionette	INFO	Stopped listening on port 62548
+JavaScript warning: https://sportsbook.caesars.com/us/build/czr/vendorsScripts/newrelic.js, line 5: Script terminated by timeout at:
+c@https://sportsbook.caesars.com/us/build/czr/vendorsScripts/newrelic.js:5:36569
+
+1703017634250	geckodriver	INFO	Listening on 127.0.0.1:62680
+1703017634774	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/z1/xp6xz36j7zxb6mdqstp30mfw0000gn/T/rust_mozprofileqrwrca"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2023-12-19 14:27:15.047 firefox-bin[5310:226493] WARNING: Secure coding is not enabled for restorable state! Enable secure coding by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState: and returning YES.
+1703017635189	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1703017635327	Marionette	INFO	Listening on port 62686
+WebDriver BiDi listening on ws://127.0.0.1:62681
+Read port: 62686
+1703017635492	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62681/devtools/browser/2067d83b-0702-4c59-9dee-0ad0bcf711c3
+1703017639317	Marionette	INFO	Stopped listening on port 62686
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2788
+tt/o<@https://sc-static.net/scevent.min.js:2:9389
+
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2788
+tt/o<@https://sc-static.net/scevent.min.js:2:9389
+
+1703017888398	geckodriver	INFO	Listening on 127.0.0.1:62786
+1703017888902	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/z1/xp6xz36j7zxb6mdqstp30mfw0000gn/T/rust_mozprofileuGwqK1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2023-12-19 14:31:29.309 firefox-bin[5401:229577] WARNING: Secure coding is not enabled for restorable state! Enable secure coding by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState: and returning YES.
+1703017889470	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1703017889663	Marionette	INFO	Listening on port 62792
+WebDriver BiDi listening on ws://127.0.0.1:62787
+Read port: 62792
+1703017889902	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62787/devtools/browser/ba262201-7f7c-43f3-a56a-53dbaf199a95
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2788
+c@https://sc-static.net/scevent.min.js:2:6744
+
+JavaScript warning: https://b470c5d1aeb4.edge.sdk.awswaf.com/b470c5d1aeb4/06faba802dee/challenge.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://b470c5d1aeb4.1c2d24f3.us-east-2.token.awswaf.com/b470c5d1aeb4/challenge.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1703017906675	Marionette	INFO	Stopped listening on port 62792
+JavaScript warning: https://sportsbook.caesars.com/us/build/czr/vendorsScripts/newrelic.js, line 5: Script terminated by timeout at:
+c@https://sportsbook.caesars.com/us/build/czr/vendorsScripts/newrelic.js:5:36569
+
+1703017907454	geckodriver	INFO	Listening on 127.0.0.1:62920
+1703017907972	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/z1/xp6xz36j7zxb6mdqstp30mfw0000gn/T/rust_mozprofileTC0OFo"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+2023-12-19 14:31:48.243 firefox-bin[5446:230700] WARNING: Secure coding is not enabled for restorable state! Enable secure coding by implementing NSApplicationDelegate.applicationSupportsSecureRestorableState: and returning YES.
+1703017908377	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1703017908505	Marionette	INFO	Listening on port 62926
+WebDriver BiDi listening on ws://127.0.0.1:62921
+Read port: 62926
+1703017908663	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62921/devtools/browser/0b053cf3-a017-4508-af51-45c7de724939
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2788
+c@https://sc-static.net/scevent.min.js:2:6744
+
+1703017912533	Marionette	INFO	Stopped listening on port 62926
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2788
+tt/o<@https://sc-static.net/scevent.min.js:2:9389
+
