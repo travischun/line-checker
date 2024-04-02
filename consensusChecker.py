@@ -55,19 +55,23 @@ def scoresandoddsConsensusCheck(year, URL, teamList, teamCodes):
 formattedConsensus = {}
 
 def formatDate(date,year):
-    #12/17 7:20PM
+    print(date)
     fullDate = date.split(' ')
     fullDate[0] = fullDate[0] + '/' + year
     finishedDate = " ".join(fullDate)
+    print(finishedDate)
     dateObject = datetime.datetime.strptime(finishedDate, "%m/%d/%Y %I:%M%p").strftime('%m%d%Y-%H:%M')
     return dateObject
 
 def formatConsensus(teams,teamsArr,datesArr,year):
     y = 0
-    print(teams)
+    # print(teams)
     timestampArr = []
     for date in datesArr:
+        print(date)
         timestampArr.append(formatDate(date,year))
+    print(timestampArr)
+    print(teamsArr)
     for x,team in enumerate(teamsArr):
         if x % 2 == 0:
             key = timestampArr[y] + '-' + teams[teamsArr[x]] + "vs" + teams[teamsArr[x + 1]]

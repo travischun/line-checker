@@ -6,8 +6,9 @@ from oddSharkConsensus import oddSharkConensus
 from sendMessage import send_message
 from sendEmail import send_email
 
-from caesarsLineCheckerNFL import caesarsLineCheckerNFL
+from caesarsLineCheckerGeneric import caesarsLineCheckerGeneric
 from consensusChecker import scoresandoddsConsensusCheck
+from caesarsApiLineChecker import caesarsApiLineChecker
 from mongoDB import setupDatabase, checkCollection, createCollection, printCollection, compareCollection
 import time
 import schedule
@@ -17,18 +18,20 @@ from datetime import datetime
 testConsensusData = {'12182023-19:15-PhiladelphiaEaglesvsSeattleSeahawks': {'Away': {'Team': 'Philadelphia Eagles', 'Consensus': '67'}, 'Home': {'Team': 'Seattle Seahawks', 'Consensus': '33'}, 'gameTime': '12/18 7:15PM'},'12252023-15:30-NewYorkGiantsvsPhiladelphiaEagles': {'gameTime': 'Dec 25 3:30pm', 'Away': {'Team': 'New York Giants', 'Consensus': '50'}, 'Home': {'Team': 'Philadelphia Eagles', 'Consensus': '50'}}, '12252023-19:15-BaltimoreRavensvsSanFrancisco49ers': {'gameTime': 'Dec 25 7:15pm', 'Away': {'Team': 'Baltimore Ravens', 'Consensus': '65'}, 'Home': {'Team': 'San Francisco 49ers', 'Consensus': '35'}}}
 testLineData = {'12182023-19:15-PhiladelphiaEaglesvsSeattleSeahawks': {'gameTime': 'Dec 18 7:15pm', 'Away': {'Team': 'Philadelphia Eagles', 'Line': '-4.5-110'}, 'Home': {'Team': 'Seattle Seahawks', 'Line': '+4.5-110'}},'12252023-15:30-NewYorkGiantsvsPhiladelphiaEagles': {'gameTime': 'Dec 25 3:30pm', 'Away': {'Team': 'New York Giants', 'Line': '+11.5-110'}, 'Home': {'Team': 'Philadelphia Eagles', 'Line': '-11.5-110'}}, '12252023-19:15-BaltimoreRavensvsSanFrancisco49ers': {'gameTime': 'Dec 25 7:15pm', 'Away': {'Team': 'Baltimore Ravens', 'Line': '+5.5-110'}, 'Home': {'Team': 'San Francisco 49ers', 'Line': '-5.5-110'}}}
 
-year = "2023"
-URL = "https://www.scoresandodds.com/nfl/consensus-picks"
+year = "2024"
+Consensus_URL = "https://www.scoresandodds.com/nba/consensus-picks"
+Caesars_URL = "https://sportsbook.caesars.com/us/ma/bet/basketball?id=5806c896-4eec-4de1-874f-afed93114b8c"
 
-teamCodes = ['ARI', 'ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CIN', 'CLE', 'DAL', 'DEN', 'DET', 'GB', 'HOU', 'IND', 'JAX', 'KC', 'LAC', 'LAR', 'LV', 'MIA', 'MIN', 'NE', 'NO', 'NYG', 'NYJ', 'PHI', 'PIT', 'SEA', 'SF', 'TB', 'TEN', 'WAS']
+teamCodes = ['ATL', 'BOS', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GS', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NO', 'NY', 'BKN', 'OKC', 'ORL', 'PHI', 'PHO', 'POR','SA', 'SAC', 'TOR', 'UTA', 'WAS']
 
-nfl_teams = {"DEN": "Denver Broncos","KC":"Kansas City Chiefs","BAL":"Baltimore Ravens","TEN":"Tennessee Titans","WAS":"Washington Commanders","ATL":"Atlanta Falcons","CAR":"Carolina Panthers","MIA":"Miami Dolphins","NO":"New Orleans Saints","HOU":"Houston Texans","SEA":"Seattle Seahawks","CIN":"Cincinnati Bengals","IND":"Indianapolis Colts","JAX":"Jacksonville Jaguars","SF":"San Francisco 49ers","CLE":"Cleveland Browns","MIN":"Minnesota Vikings","CHI":"Chicago Bears","NE":"New England Patriots","LV":"Las Vegas Raiders","DET":"Detroit Lions","TB":"Tampa Bay Buccaneers","PHI":"Philadelphia Eagles","NYJ":"New York Jets","ARI":"Arizona Cardinals","LAR":"Los Angeles Rams","NYG":"New York Giants","BUF":"Buffalo Bills","DAL":"Dallas Cowboys","LAC":"Los Angeles Chargers","PIT":"Pittsburgh Steelers","GB":"Green Bay Packers"}
+nba_teams = {'ATL': 'Atlanta Hawks', 'BOS': 'Boston Celtics', 'CHA': 'Charlotte Hornets', 'CHI': 'Chicago Bulls', 'CLE': 'Cleveland Cavaliers', 'DAL': 'Dallas Mavericks', 'DEN': 'Denver Nuggets', 'DET': 'Detroit Pistons', 'GS': 'Golden State Warriors', 'HOU': 'Houston Rockets', 'IND': 'Indiana Pacers', 'LAC': 'Los Angeles Clippers', 'LAL': 'Los Angeles Lakers', 'MEM': 'Memphis Grizzlies', 'MIA': 'Miami Heat', 'MIL': 'Milwaukee Bucks', 'MIN': 'Minnesota Timberwolves', 'NO': 'New Orleans Pelicans', 'NY': 'New York Knicks', 'BKN': 'Brooklyn Nets', 'OKC': 'Oklahoma City Thunder', 'ORL': 'Orlando Magic', 'PHI': 'Philadelphia 76ers', 'PHO': 'Phoenix Suns', 'POR': 'Portland Trail Blazers', 'SAC': 'Sacramento Kings', 'SA':'San Antonio Spurs','TOR': 'Toronto Raptors', 'UTA': 'Utah Jazz', 'WAS': 'Washington Wizards'}
+teamNames = ['Atlanta Hawks', 'Boston Celtics', 'Charlotte Hornets', 'Chicago Bulls', 'Cleveland Cavaliers', 'Dallas Mavericks', 'Denver Nuggets', 'Detroit Pistons', 'Golden State Warriors', 'Houston Rockets', 'Indiana Pacers', 'Los Angeles Clippers', 'Los Angeles Lakers', 'Memphis Grizzlies', 'Miami Heat', 'Milwaukee Bucks', 'Minnesota Timberwolves', 'New Orleans Pelicans', 'New York Knicks', 'Brooklyn Nets', 'Oklahoma City Thunder', 'Orlando Magic', 'Philadelphia 76ers', 'Phoenix Suns', 'Portland Trail Blazers', 'San Antonio Spurs', 'Sacramento Kings', 'Toronto Raptors', 'Utah Jazz', 'Washington Wizards']
 
-
+API_URL = "https://api.americanwagering.com/regions/us/locations/ma/brands/czr/sb/v3/events/highlights/?competitionId=5806c896-4eec-4de1-874f-afed93114b8c"
 
 now = datetime.now()
 
-subject = "NFL Odds for " + now.strftime("%d %b, %Y")
+subject = "NBA Odds for " + now.strftime("%d %b, %Y")
 sender = "travis.chun13@gmail.com"
 recipients = ["h.andrew.vo@gmail.com", "travis.chun13@gmail.com"]
 
@@ -72,21 +75,34 @@ def consolidateData(db, lineData, consensusData):
 
     #printCollection(db,key)
 def grabLinesAndConsensus():
-    message,arrGames = caesarsLineCheckerNFL()
-    consensus = scoresandoddsConsensusCheck(year, URL, nfl_teams, teamCodes)
+    #message,arrGames = caesarsLineCheckerGeneric(Caesars_URL, teamNames, year)
+    gamesArray = caesarsApiLineChecker(API_URL)
+    #consensus = scoresandoddsConsensusCheck(year, Consensus_URL, nba_teams, teamCodes)
 
-    # print(consensus)
+    print(gamesArray)
     # print(arrGames)
     
     
-    send_message(phone_number,message,EMAIL,PASSWORD)
+    #send_message(phone_number,message,EMAIL,PASSWORD)
 
-    # db = setupDatabase('nfl2023')
+    # db = setupDatabase('nba2023')
     # consolidateData(db, arrGames,consensus)
 
-    return message
+    return gamesArray
 
-message = grabLinesAndConsensus()
+def formatMessage(messageArr):
+    print('hello')
+    concat_string = ""
+    for game in messageArr:
+        concat_string = '\n'.join([concat_string,"--------------", game["Date"] + " " + game["Time"], game["EventName"],game["HomeTeam"] + " : " + str(game["HomeSpread"]),game["AwayTeam"] + " : " + str(game["AwaySpread"])])
+    return concat_string
+messageArr = grabLinesAndConsensus()
+send_message(phone_number,formatMessage(messageArr),EMAIL,PASSWORD)
+send_message(phone_number2,formatMessage(messageArr),EMAIL,PASSWORD)
+
+
+
+
 
 # send_message(phone_number,message,EMAIL,PASSWORD)
 # send_message(phone_number2,message,EMAIL,PASSWORD)
