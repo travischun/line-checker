@@ -7,7 +7,7 @@ from sendMessage import send_message
 from sendEmail import send_email
 
 from caesarsLineCheckerGeneric import caesarsLineCheckerGeneric
-from consensusChecker import scoresandoddsConsensusCheck
+from consensusScoresAPIChecker import scoresandoddsAPIConsensusCheck
 from caesarsApiLineChecker import caesarsApiLineChecker
 from mongoDB import setupDatabase, checkCollection, createCollection, printCollection, compareCollection
 import time
@@ -77,9 +77,9 @@ def consolidateData(db, lineData, consensusData):
 def grabLinesAndConsensus():
     #message,arrGames = caesarsLineCheckerGeneric(Caesars_URL, teamNames, year)
     gamesArray = caesarsApiLineChecker(API_URL)
-    #consensus = scoresandoddsConsensusCheck(year, Consensus_URL, nba_teams, teamCodes)
+    #consensus = scoresandoddsAPIConsensusCheck(year, Consensus_URL, nba_teams, teamCodes)
 
-    print(gamesArray)
+    # print(gamesArray)
     # print(arrGames)
     
     
@@ -87,7 +87,7 @@ def grabLinesAndConsensus():
 
     # db = setupDatabase('nba2023')
     # consolidateData(db, arrGames,consensus)
-
+    # return 0
     return gamesArray
 
 def formatMessage(messageArr):
