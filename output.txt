@@ -1,152 +1,164 @@
-[{'Away': {'Team': 'Kansas City Chiefs', 'Consensus': '55', 'Line': ' -2.5 '}, 'Home': {'Team': 'Pittsburgh Steelers', 'Consensus': '45', 'Line': ' +2.5 '}, 'gameTime': '2024-12-25T18:00:00Z'}, {'Away': {'Team': 'Baltimore Ravens', 'Consensus': '40', 'Line': ' -5.5 '}, 'Home': {'Team': 'Houston Texans', 'Consensus': '60', 'Line': ' +5.5 '}, 'gameTime': '2024-12-25T21:30:00Z'}, {'Away': {'Team': 'Seattle Seahawks', 'Consensus': '77', 'Line': ' -3.5 '}, 'Home': {'Team': 'Chicago Bears', 'Consensus': '23', 'Line': ' +3.5 '}, 'gameTime': '2024-12-27T01:15:00Z'}, {'Away': {'Team': 'Los Angeles Chargers', 'Consensus': '76', 'Line': ' -4 '}, 'Home': {'Team': 'New England Patriots', 'Consensus': '24', 'Line': ' +4 '}, 'gameTime': '2024-12-28T18:00:00Z'}, {'Away': {'Team': 'Denver Broncos', 'Consensus': '47', 'Line': ' +3 '}, 'Home': {'Team': 'Cincinnati Bengals', 'Consensus': '53', 'Line': ' -3 '}, 'gameTime': '2024-12-28T21:30:00Z'}, {'Away': {'Team': 'Arizona Cardinals', 'Consensus': '36', 'Line': ' +6.5 '}, 'Home': {'Team': 'Indianapolis Colts', 'Consensus': '64', 'Line': ' -6.5 '}, 'gameTime': '2024-12-29T01:15:00Z'}, {'Away': {'Team': 'New York Giants', 'Consensus': '72', 'Line': ' -8 '}, 'Home': {'Team': 'Las Vegas Raiders', 'Consensus': '28', 'Line': ' +8 '}, 'gameTime': '2024-12-29T18:00:00Z'}, {'Away': {'Team': 'New Orleans Saints', 'Consensus': '62', 'Line': ' -1 '}, 'Home': {'Team': 'Tennessee Titans', 'Consensus': '38', 'Line': ' +1 '}, 'gameTime': '2024-12-29T18:00:00Z'}, {'Away': {'Team': 'New York Jets', 'Consensus': '62', 'Line': ' +1 '}, 'Home': {'Team': 'Buffalo Bills', 'Consensus': '38', 'Line': ' -1 '}, 'gameTime': '2024-12-29T18:00:00Z'}, {'Away': {'Team': 'Carolina Panthers', 'Consensus': '39', 'Line': ' +9.5 '}, 'Home': {'Team': 'Tampa Bay Buccaneers', 'Consensus': '61', 'Line': ' -9.5 '}, 'gameTime': '2024-12-29T18:00:00Z'}, {'Away': {'Team': 'Dallas Cowboys', 'Consensus': '54', 'Line': ' +8 '}, 'Home': {'Team': 'Philadelphia Eagles', 'Consensus': '46', 'Line': ' -8 '}, 'gameTime': '2024-12-29T18:00:00Z'}, {'Away': {'Team': 'Miami Dolphins', 'Consensus': '52', 'Line': ' +9.5 '}, 'Home': {'Team': 'Cleveland Browns', 'Consensus': '48', 'Line': ' -9.5 '}, 'gameTime': '2024-12-29T18:00:00Z'}, {'Away': {'Team': 'Green Bay Packers', 'Consensus': '69', 'Line': ' -6.5 '}, 'Home': {'Team': 'Minnesota Vikings', 'Consensus': '31', 'Line': ' +6.5 '}, 'gameTime': '2024-12-29T21:05:00Z'}, {'Away': {'Team': 'Atlanta Falcons', 'Consensus': '64', 'Line': ' +1 '}, 'Home': {'Team': 'Washington Commanders', 'Consensus': '36', 'Line': ' -1 '}, 'gameTime': '2024-12-29T21:25:00Z'}, {'Away': {'Team': 'Detroit Lions', 'Consensus': '32', 'Line': ' +4 '}, 'Home': {'Team': 'San Francisco 49ers', 'Consensus': '68', 'Line': ' -4 '}, 'gameTime': '2024-12-30T01:20:00Z'}]
+['01042025-21:30', '01052025-01:00', '01052025-18:00', '01052025-18:00', '01052025-18:00', '01052025-18:00', '01052025-18:00', '01052025-18:00', '01052025-18:00', '01052025-18:00', '01052025-21:25', '01052025-21:25', '01052025-21:25', '01052025-21:25', '01052025-21:25', '01062025-01:20']
+['CLE', 'BAL', 'CIN', 'PIT', 'NO', 'TB', 'BUF', 'NE', 'CHI', 'GB', 'JAC', 'IND', 'CAR', 'ATL', 'WAS', 'DAL', 'HOU', 'TEN', 'NYG', 'PHI', 'MIA', 'NYJ', 'KC', 'DEN', 'LAC', 'LV', 'SEA', 'LA', 'SF', 'ARI', 'MIN', 'DET']
+[{'Away': {'Team': 'Cleveland Browns', 'Consensus': '47', 'Line': ' +20 '}, 'Home': {'Team': 'Baltimore Ravens', 'Consensus': '53', 'Line': ' -20 '}, 'gameTime': '2025-01-04T21:30:00Z'}, {'Away': {'Team': 'Cincinnati Bengals', 'Consensus': '66', 'Line': ' -2 '}, 'Home': {'Team': 'Pittsburgh Steelers', 'Consensus': '34', 'Line': ' +2 '}, 'gameTime': '2025-01-05T01:00:00Z'}, {'Away': {'Team': 'New Orleans Saints', 'Consensus': '16', 'Line': ' +14 '}, 'Home': {'Team': 'Tampa Bay Buccaneers', 'Consensus': '84', 'Line': ' -14 '}, 'gameTime': '2025-01-05T18:00:00Z'}, {'Away': {'Team': 'Buffalo Bills', 'Consensus': '78', 'Line': ' -2.5 '}, 'Home': {'Team': 'New England Patriots', 'Consensus': '22', 'Line': ' +2.5 '}, 'gameTime': '2025-01-05T18:00:00Z'}, {'Away': {'Team': 'Chicago Bears', 'Consensus': '25', 'Line': ' +10 '}, 'Home': {'Team': 'Green Bay Packers', 'Consensus': '75', 'Line': ' -10 '}, 'gameTime': '2025-01-05T18:00:00Z'}, {'Away': {'Team': 'Jacksonville Jaguars', 'Consensus': '47', 'Line': ' +4.5 '}, 'Home': {'Team': 'Indianapolis Colts', 'Consensus': '53', 'Line': ' -4.5 '}, 'gameTime': '2025-01-05T18:00:00Z'}, {'Away': {'Team': 'Carolina Panthers', 'Consensus': '34', 'Line': ' +8 '}, 'Home': {'Team': 'Atlanta Falcons', 'Consensus': '66', 'Line': ' -8 '}, 'gameTime': '2025-01-05T18:00:00Z'}, {'Away': {'Team': 'Washington Commanders', 'Consensus': '71', 'Line': ' -6.5 '}, 'Home': {'Team': 'Dallas Cowboys', 'Consensus': '29', 'Line': ' +6.5 '}, 'gameTime': '2025-01-05T18:00:00Z'}, {'Away': {'Team': 'Houston Texans', 'Consensus': '84', 'Line': ' +1.5 '}, 'Home': {'Team': 'Tennessee Titans', 'Consensus': '16', 'Line': ' -1.5 '}, 'gameTime': '2025-01-05T18:00:00Z'}, {'Away': {'Team': 'New York Giants', 'Consensus': '18', 'Line': ' +3 '}, 'Home': {'Team': 'Philadelphia Eagles', 'Consensus': '82', 'Line': ' -3 '}, 'gameTime': '2025-01-05T18:00:00Z'}, {'Away': {'Team': 'Miami Dolphins', 'Consensus': '69', 'Line': ' -1 '}, 'Home': {'Team': 'New York Jets', 'Consensus': '31', 'Line': ' +1 '}, 'gameTime': '2025-01-05T21:25:00Z'}, {'Away': {'Team': 'Kansas City Chiefs', 'Consensus': '79', 'Line': ' +10.5 '}, 'Home': {'Team': 'Denver Broncos', 'Consensus': '21', 'Line': ' -10.5 '}, 'gameTime': '2025-01-05T21:25:00Z'}, {'Away': {'Team': 'Los Angeles Chargers', 'Consensus': '85', 'Line': ' -4.5 '}, 'Home': {'Team': 'Las Vegas Raiders', 'Consensus': '15', 'Line': ' +4.5 '}, 'gameTime': '2025-01-05T21:25:00Z'}, {'Away': {'Team': 'Seattle Seahawks', 'Consensus': '28', 'Line': ' -6.5 '}, 'Home': {'Team': 'Los Angeles Rams', 'Consensus': '72', 'Line': ' +6.5 '}, 'gameTime': '2025-01-05T21:25:00Z'}, {'Away': {'Team': 'San Francisco 49ers', 'Consensus': '67', 'Line': ' +4.5 '}, 'Home': {'Team': 'Arizona Cardinals', 'Consensus': '33', 'Line': ' -4.5 '}, 'gameTime': '2025-01-05T21:25:00Z'}, {'Away': {'Team': 'Minnesota Vikings', 'Consensus': '56', 'Line': ' +3 '}, 'Home': {'Team': 'Detroit Lions', 'Consensus': '44', 'Line': ' -3 '}, 'gameTime': '2025-01-06T01:20:00Z'}]
 
 ------------------------
-12/25/2024
-12:00PM
-Home: Pittsburgh Steelers
-Line:  +2.5 
-Consensus: 45%
-Kansas City Chiefs
-Line:  -2.5 
-Consensus: 55%
-
-------------------------
-12/25/2024
+01/04/2025
 03:30PM
-Home: Houston Texans
-Line:  +5.5 
-Consensus: 60%
-Baltimore Ravens
-Line:  -5.5 
-Consensus: 40%
-
-------------------------
-12/26/2024
-07:15PM
-Home: Chicago Bears
-Line:  +3.5 
-Consensus: 23%
-Seattle Seahawks
-Line:  -3.5 
-Consensus: 77%
-
-------------------------
-12/28/2024
-12:00PM
-Home: New England Patriots
-Line:  +4 
-Consensus: 24%
-Los Angeles Chargers
-Line:  -4 
-Consensus: 76%
-
-------------------------
-12/28/2024
-03:30PM
-Home: Cincinnati Bengals
-Line:  -3 
+Home: Baltimore Ravens
+Line:  -20 
 Consensus: 53%
-Denver Broncos
-Line:  +3 
+Cleveland Browns
+Line:  +20 
 Consensus: 47%
 
 ------------------------
-12/28/2024
-07:15PM
-Home: Indianapolis Colts
-Line:  -6.5 
-Consensus: 64%
-Arizona Cardinals
-Line:  +6.5 
-Consensus: 36%
+01/04/2025
+07:00PM
+Home: Pittsburgh Steelers
+Line:  +2 
+Consensus: 34%
+Cincinnati Bengals
+Line:  -2 
+Consensus: 66%
 
 ------------------------
-12/29/2024
-12:00PM
-Home: Las Vegas Raiders
-Line:  +8 
-Consensus: 28%
-New York Giants
-Line:  -8 
-Consensus: 72%
-
-------------------------
-12/29/2024
-12:00PM
-Home: Tennessee Titans
-Line:  +1 
-Consensus: 38%
-New Orleans Saints
-Line:  -1 
-Consensus: 62%
-
-------------------------
-12/29/2024
-12:00PM
-Home: Buffalo Bills
-Line:  -1 
-Consensus: 38%
-New York Jets
-Line:  +1 
-Consensus: 62%
-
-------------------------
-12/29/2024
+01/05/2025
 12:00PM
 Home: Tampa Bay Buccaneers
-Line:  -9.5 
-Consensus: 61%
-Carolina Panthers
-Line:  +9.5 
-Consensus: 39%
+Line:  -14 
+Consensus: 84%
+New Orleans Saints
+Line:  +14 
+Consensus: 16%
 
 ------------------------
-12/29/2024
+01/05/2025
+12:00PM
+Home: New England Patriots
+Line:  +2.5 
+Consensus: 22%
+Buffalo Bills
+Line:  -2.5 
+Consensus: 78%
+
+------------------------
+01/05/2025
+12:00PM
+Home: Green Bay Packers
+Line:  -10 
+Consensus: 75%
+Chicago Bears
+Line:  +10 
+Consensus: 25%
+
+------------------------
+01/05/2025
+12:00PM
+Home: Indianapolis Colts
+Line:  -4.5 
+Consensus: 53%
+Jacksonville Jaguars
+Line:  +4.5 
+Consensus: 47%
+
+------------------------
+01/05/2025
+12:00PM
+Home: Atlanta Falcons
+Line:  -8 
+Consensus: 66%
+Carolina Panthers
+Line:  +8 
+Consensus: 34%
+
+------------------------
+01/05/2025
+12:00PM
+Home: Dallas Cowboys
+Line:  +6.5 
+Consensus: 29%
+Washington Commanders
+Line:  -6.5 
+Consensus: 71%
+
+------------------------
+01/05/2025
+12:00PM
+Home: Tennessee Titans
+Line:  -1.5 
+Consensus: 16%
+Houston Texans
+Line:  +1.5 
+Consensus: 84%
+
+------------------------
+01/05/2025
 12:00PM
 Home: Philadelphia Eagles
-Line:  -8 
-Consensus: 46%
-Dallas Cowboys
-Line:  +8 
-Consensus: 54%
+Line:  -3 
+Consensus: 82%
+New York Giants
+Line:  +3 
+Consensus: 18%
 
 ------------------------
-12/29/2024
-12:00PM
-Home: Cleveland Browns
-Line:  -9.5 
-Consensus: 48%
-Miami Dolphins
-Line:  +9.5 
-Consensus: 52%
-
-------------------------
-12/29/2024
-03:05PM
-Home: Minnesota Vikings
-Line:  +6.5 
+01/05/2025
+03:25PM
+Home: New York Jets
+Line:  +1 
 Consensus: 31%
-Green Bay Packers
-Line:  -6.5 
+Miami Dolphins
+Line:  -1 
 Consensus: 69%
 
 ------------------------
-12/29/2024
+01/05/2025
 03:25PM
-Home: Washington Commanders
-Line:  -1 
-Consensus: 36%
-Atlanta Falcons
-Line:  +1 
-Consensus: 64%
+Home: Denver Broncos
+Line:  -10.5 
+Consensus: 21%
+Kansas City Chiefs
+Line:  +10.5 
+Consensus: 79%
 
 ------------------------
-12/29/2024
+01/05/2025
+03:25PM
+Home: Las Vegas Raiders
+Line:  +4.5 
+Consensus: 15%
+Los Angeles Chargers
+Line:  -4.5 
+Consensus: 85%
+
+------------------------
+01/05/2025
+03:25PM
+Home: Los Angeles Rams
+Line:  +6.5 
+Consensus: 72%
+Seattle Seahawks
+Line:  -6.5 
+Consensus: 28%
+
+------------------------
+01/05/2025
+03:25PM
+Home: Arizona Cardinals
+Line:  -4.5 
+Consensus: 33%
+San Francisco 49ers
+Line:  +4.5 
+Consensus: 67%
+
+------------------------
+01/05/2025
 07:20PM
-Home: San Francisco 49ers
-Line:  -4 
-Consensus: 68%
-Detroit Lions
-Line:  +4 
-Consensus: 32%
+Home: Detroit Lions
+Line:  -3 
+Consensus: 44%
+Minnesota Vikings
+Line:  +3 
+Consensus: 56%
 

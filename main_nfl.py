@@ -22,9 +22,9 @@ testLineData = {'12182023-19:15-PhiladelphiaEaglesvsSeattleSeahawks': {'gameTime
 year = "2024"
 URL = "https://www.scoresandodds.com/nfl/consensus-picks"
 
-teamCodes = ['ARI', 'ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CIN', 'CLE', 'DAL', 'DEN', 'DET', 'GB', 'HOU', 'IND', 'JAX', 'KC', 'LAC', 'LAR', 'LV', 'MIA', 'MIN', 'NE', 'NO', 'NYG', 'NYJ', 'PHI', 'PIT', 'SEA', 'SF', 'TB', 'TEN', 'WAS']
+teamCodes = ['ARI', 'ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CIN', 'CLE', 'DAL', 'DEN', 'DET', 'GB', 'HOU', 'IND', 'JAC', 'KC', 'LAC', 'LA', 'LV', 'MIA', 'MIN', 'NE', 'NO', 'NYG', 'NYJ', 'PHI', 'PIT', 'SEA', 'SF', 'TB', 'TEN', 'WAS']
 
-nfl_teams = {"DEN": "Denver Broncos","KC":"Kansas City Chiefs","BAL":"Baltimore Ravens","TEN":"Tennessee Titans","WAS":"Washington Commanders","ATL":"Atlanta Falcons","CAR":"Carolina Panthers","MIA":"Miami Dolphins","NO":"New Orleans Saints","HOU":"Houston Texans","SEA":"Seattle Seahawks","CIN":"Cincinnati Bengals","IND":"Indianapolis Colts","JAX":"Jacksonville Jaguars","SF":"San Francisco 49ers","CLE":"Cleveland Browns","MIN":"Minnesota Vikings","CHI":"Chicago Bears","NE":"New England Patriots","LV":"Las Vegas Raiders","DET":"Detroit Lions","TB":"Tampa Bay Buccaneers","PHI":"Philadelphia Eagles","NYJ":"New York Jets","ARI":"Arizona Cardinals","LAR":"Los Angeles Rams","NYG":"New York Giants","BUF":"Buffalo Bills","DAL":"Dallas Cowboys","LAC":"Los Angeles Chargers","PIT":"Pittsburgh Steelers","GB":"Green Bay Packers"}
+nfl_teams = {"DEN": "Denver Broncos","KC":"Kansas City Chiefs","BAL":"Baltimore Ravens","TEN":"Tennessee Titans","WAS":"Washington Commanders","ATL":"Atlanta Falcons","CAR":"Carolina Panthers","MIA":"Miami Dolphins","NO":"New Orleans Saints","HOU":"Houston Texans","SEA":"Seattle Seahawks","CIN":"Cincinnati Bengals","IND":"Indianapolis Colts","JAC":"Jacksonville Jaguars","SF":"San Francisco 49ers","CLE":"Cleveland Browns","MIN":"Minnesota Vikings","CHI":"Chicago Bears","NE":"New England Patriots","LV":"Las Vegas Raiders","DET":"Detroit Lions","TB":"Tampa Bay Buccaneers","PHI":"Philadelphia Eagles","NYJ":"New York Jets","ARI":"Arizona Cardinals","LA":"Los Angeles Rams","NYG":"New York Giants","BUF":"Buffalo Bills","DAL":"Dallas Cowboys","LAC":"Los Angeles Chargers","PIT":"Pittsburgh Steelers","GB":"Green Bay Packers"}
 
 
 

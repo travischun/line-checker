@@ -187,8 +187,8 @@ def formatString(teams,teamsArr,datesArr,year,lines):
     for date in datesArr:
         # print(date)
         timestampArr.append(formatDate(date,year))
-    #print(timestampArr)
-    #print(teamsArr)
+    print(timestampArr)
+    print(teamsArr)
     for x,team in enumerate(teamsArr):
         if x % 2 == 0:
             key = timestampArr[y] + '-' + teams[teamsArr[x]] + "vs" + teams[teamsArr[x + 1]]
