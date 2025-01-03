@@ -12352,3 +12352,60 @@ WebDriver BiDi listening on ws://127.0.0.1:54886
 1710955365863	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 DevTools listening on ws://127.0.0.1:54886/devtools/browser/84b71b06-d9d7-40b1-b3ef-bf04df9c3cc9
 1710955369079	Marionette	INFO	Stopped listening on port 54895
+1725544201169	geckodriver	INFO	Listening on 127.0.0.1:53811
+1725544201384	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/z1/xp6xz36j7zxb6mdqstp30mfw0000gn/T/rust_mozprofileLYF8dh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1725544201894	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1725544202243	Marionette	INFO	Listening on port 53846
+WebDriver BiDi listening on ws://127.0.0.1:53812
+1725544202337	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://b470c5d1aeb4.edge.sdk.awswaf.com/b470c5d1aeb4/06faba802dee/challenge.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6893
+
+1725544217130	Marionette	INFO	Stopped listening on port 53846
+1725544217833	geckodriver	INFO	Listening on 127.0.0.1:54037
+1725544218352	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/z1/xp6xz36j7zxb6mdqstp30mfw0000gn/T/rust_mozprofileO1CWT6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1725544218660	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1725544218899	Marionette	INFO	Listening on port 54047
+WebDriver BiDi listening on ws://127.0.0.1:54038
+1725544218997	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6893
+
+1725544222497	Marionette	INFO	Stopped listening on port 54047
+1725544288202	geckodriver	INFO	Listening on 127.0.0.1:54442
+1725544288718	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/z1/xp6xz36j7zxb6mdqstp30mfw0000gn/T/rust_mozprofile1hxUXL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1725544289024	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1725544289261	Marionette	INFO	Listening on port 54452
+WebDriver BiDi listening on ws://127.0.0.1:54443
+1725544289363	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://b470c5d1aeb4.edge.sdk.awswaf.com/b470c5d1aeb4/06faba802dee/challenge.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://sc-static.net/scevent.min.js, line 2: Script terminated by timeout at:
+m@https://sc-static.net/scevent.min.js:2:2789
+c@https://sc-static.net/scevent.min.js:2:6893
+
+1725544304626	Marionette	INFO	Stopped listening on port 54452
+JavaScript warning: https://sportsbook.caesars.com/us/build/czr/vendorsScripts/newrelic.js, line 6: Script terminated by timeout at:
+nrWrapper@https://sportsbook.caesars.com/us/build/czr/vendorsScripts/newrelic.js:6:17670
+
+1725544305319	geckodriver	INFO	Listening on 127.0.0.1:54653
+1725544305830	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/z1/xp6xz36j7zxb6mdqstp30mfw0000gn/T/rust_mozprofile98XrtB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1725544306123	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1725544306364	Marionette	INFO	Listening on port 54663
+WebDriver BiDi listening on ws://127.0.0.1:54654
+1725544306464	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1725544309942	Marionette	INFO	Stopped listening on port 54663

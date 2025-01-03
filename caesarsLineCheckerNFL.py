@@ -10,7 +10,7 @@ import datetime
 URL = "https://sportsbook.caesars.com/us/ma/bet/americanfootball?id=007d7c61-07a7-4e18-bb40-15104b6eac92"
 
 nfl_teams = ["Denver Broncos","Kansas City Chiefs","Baltimore Ravens","Tennessee Titans","Washington Commanders","Atlanta Falcons","Carolina Panthers","Miami Dolphins","New Orleans Saints","Houston Texans","Seattle Seahawks","Cincinnati Bengals","Indianapolis Colts","Jacksonville Jaguars","San Francisco 49ers","Cleveland Browns","Minnesota Vikings","Chicago Bears","New England Patriots","Las Vegas Raiders","Detroit Lions","Tampa Bay Buccaneers","Philadelphia Eagles","New York Jets","Arizona Cardinals","Los Angeles Rams","New York Giants","Buffalo Bills","Dallas Cowboys","Los Angeles Chargers","Pittsburgh Steelers","Green Bay Packers"]
-year = "2023"
+year = "2024"
 
 def formatDate(date):
     dateObject = datetime.datetime.strptime(date, "%b %d %Y %I:%M%p").strftime('%m%d%Y-%H:%M')

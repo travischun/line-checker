@@ -6,18 +6,20 @@ from oddSharkConsensus import oddSharkConensus
 from sendMessage import send_message
 from sendEmail import send_email
 
-from caesarsLineCheckerNFL import caesarsLineCheckerNFL
+from caesarsNFLApiLineChecker import formatDateTime
 from consensusChecker import scoresandoddsConsensusCheck
+from consensusScoresAPIChecker import scoresandoddsAPIConsensusCheck, formatDate
 from mongoDB import setupDatabase, checkCollection, createCollection, printCollection, compareCollection
 import time
 import schedule
 from datetime import datetime
-
+from dateutil import tz
+import unicodedata
 
 testConsensusData = {'12182023-19:15-PhiladelphiaEaglesvsSeattleSeahawks': {'Away': {'Team': 'Philadelphia Eagles', 'Consensus': '67'}, 'Home': {'Team': 'Seattle Seahawks', 'Consensus': '33'}, 'gameTime': '12/18 7:15PM'},'12252023-15:30-NewYorkGiantsvsPhiladelphiaEagles': {'gameTime': 'Dec 25 3:30pm', 'Away': {'Team': 'New York Giants', 'Consensus': '50'}, 'Home': {'Team': 'Philadelphia Eagles', 'Consensus': '50'}}, '12252023-19:15-BaltimoreRavensvsSanFrancisco49ers': {'gameTime': 'Dec 25 7:15pm', 'Away': {'Team': 'Baltimore Ravens', 'Consensus': '65'}, 'Home': {'Team': 'San Francisco 49ers', 'Consensus': '35'}}}
 testLineData = {'12182023-19:15-PhiladelphiaEaglesvsSeattleSeahawks': {'gameTime': 'Dec 18 7:15pm', 'Away': {'Team': 'Philadelphia Eagles', 'Line': '-4.5-110'}, 'Home': {'Team': 'Seattle Seahawks', 'Line': '+4.5-110'}},'12252023-15:30-NewYorkGiantsvsPhiladelphiaEagles': {'gameTime': 'Dec 25 3:30pm', 'Away': {'Team': 'New York Giants', 'Line': '+11.5-110'}, 'Home': {'Team': 'Philadelphia Eagles', 'Line': '-11.5-110'}}, '12252023-19:15-BaltimoreRavensvsSanFrancisco49ers': {'gameTime': 'Dec 25 7:15pm', 'Away': {'Team': 'Baltimore Ravens', 'Line': '+5.5-110'}, 'Home': {'Team': 'San Francisco 49ers', 'Line': '-5.5-110'}}}
 
-year = "2023"
+year = "2024"
 URL = "https://www.scoresandodds.com/nfl/consensus-picks"
 
 teamCodes = ['ARI', 'ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CIN', 'CLE', 'DAL', 'DEN', 'DET', 'GB', 'HOU', 'IND', 'JAX', 'KC', 'LAC', 'LAR', 'LV', 'MIA', 'MIN', 'NE', 'NO', 'NYG', 'NYJ', 'PHI', 'PIT', 'SEA', 'SF', 'TB', 'TEN', 'WAS']
@@ -71,25 +73,42 @@ def consolidateData(db, lineData, consensusData):
             createCollection(db, key, lineData[key])
 
     #printCollection(db,key)
-def grabLinesAndConsensus():
-    message,arrGames = caesarsLineCheckerNFL()
-    consensus = scoresandoddsConsensusCheck(year, URL, nfl_teams, teamCodes)
 
+def generateMessage(consensus):
+    finalStr = ""
+    print(consensus)
+    for game in consensus:
+        # print(game)
+        formattedDate = formatDateTime(game['gameTime'],"date")
+        formattedTime = formatDateTime(game['gameTime'],"time")
+        
+        string = "\n------------------------\n" + formattedDate + "\n" + formattedTime + "\n" + "Home: " + game["Home"]["Team"] + "\n" + "Line: " + game["Home"]["Line"] + "\n" + "Consensus: " + game["Home"]["Consensus"] + "%\n" + game["Away"]["Team"] + "\n" + "Line: " + game["Away"]["Line"] + "\nConsensus: " + game["Away"]["Consensus"] + "%\n"
+
+        finalStr = finalStr + string
+
+    return finalStr
+
+    
+def grabLinesAndConsensus():
+    # message,arrGames = caesarsLineCheckerNFL()
+    consensus = scoresandoddsAPIConsensusCheck(year, URL, nfl_teams, teamCodes)
+    message = generateMessage(consensus)
     # print(consensus)
     # print(arrGames)
     
-    
-    send_message(phone_number,message,EMAIL,PASSWORD)
+    # send_message(phone_number,message,EMAIL,PASSWORD)
 
     # db = setupDatabase('nfl2023')
     # consolidateData(db, arrGames,consensus)
-
+    # print(message)
     return message
 
 message = grabLinesAndConsensus()
-
+print(message)
 # send_message(phone_number,message,EMAIL,PASSWORD)
-# send_message(phone_number2,message,EMAIL,PASSWORD)
+normalize_message = unicodedata.normalize("NFKD", message)
+send_message(phone_number,normalize_message,EMAIL,PASSWORD)
+send_message(phone_number2,normalize_message,EMAIL,PASSWORD)
 
 # send_email(subject, message, sender, recipients, PASSWORD)
     

@@ -28,7 +28,7 @@ def formatDateTime(date,selection):
 def caesarsApiLineChecker(URL):
     fileName = ""
     response = requests.get(URL, headers=headers)
-    #print(response.json())
+    print(response)
     GamesArray = []
 
     payload = response.json()
